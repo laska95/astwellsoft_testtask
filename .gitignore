@@ -38,3 +38,7 @@ config/test\.php
 config/test_db\.php
 
 tests/
+
+Vagrantfile
+
+vagrant/
