@@ -39,8 +39,8 @@ class Shop extends ActiveRecord {
     public function rules() {
         $ret = [
             [['id'], 'integer'],
-            [['name'], 'string'],
-            [['name'], 'required'],
+            [['name', 'week_schedule_settings'], 'string'],
+            [['name', 'week_schedule_settings'], 'required'],
             [['name'], 'unique'],
             [['update_date', 'create_date'], 'date', 'format' => 'php:Y-m-d H:i:s']
         ];
